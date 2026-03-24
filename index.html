@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tutorial</title>
+<title>Nothing</title>
 
 <style>
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,31 +18,7 @@ body {
     color: #fff;
 
     display: grid;
-    place-items: center; /* PERFECT CENTER */
-}
-
-.back-btn {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
-    z-index: 9999;
-}
-
-.back-btn:hover {
-    background: #fff;
-    color: #000;
-    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
-}
-
-.back-btn:active {
-    transform: scale(0.95);
+    place-items: center; /* perfectly centers container */
 }
 
 .container {
@@ -54,12 +31,14 @@ body {
     transition: box-shadow 0.4s ease;
 }
 
+/* optional hover glow */
 .container:hover {
     box-shadow: 0 0 30px #fff;
 }
 
+/* Remove default margin of h1 to fix vertical centering */
 h1 {
-    text-align: center;
+    margin: 0;
 }
 
 .section {
@@ -73,6 +52,7 @@ img {
     margin-top: 10px;
 }
 
+/* COPY BOX */
 .copy-box {
     background: #000;
     border: 1px solid #fff;
@@ -94,8 +74,6 @@ img {
 </head>
 
 <body>
-
-<button class="back-btn">Back</button>
 
 <div class="container">
     <h1>There is nothing here sorry</h1>
